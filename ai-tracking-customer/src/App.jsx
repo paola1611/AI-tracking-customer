@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const API = 'http://localhost:3001'
+const API = import.meta.env.VITE_API_URL || 'http://localhost:3001'
 
 const CATEGORY_STYLES = [
   { keywords: ['customer', 'client', 'satisfaction', 'support', 'service'], classes: 'bg-blue-50 text-blue-700 border-blue-200' },
